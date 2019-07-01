@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">create A chart</string>
+    <string name="title_activity_bar_chart_">BarChart_Activity</string>
+    <string name="gallery">Gallery</string>
+</resources>
