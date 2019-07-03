@@ -10,8 +10,6 @@ public class Full_Image_Activity extends AppCompatActivity {
 
     ImageView fullImage;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +17,7 @@ public class Full_Image_Activity extends AppCompatActivity {
 
         fullImage = (ImageView) findViewById(R.id.full_image);
 
-        String data = getIntent().getExtras().getString("img");
+        String data = getIntent().getExtras().getString("png");
 
         fullImage.setImageURI(Uri.parse(data));
     }

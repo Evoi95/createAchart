@@ -2,4 +2,7 @@
     <string name="app_name">create A chart</string>
     <string name="title_activity_bar_chart_">BarChart_Activity</string>
     <string name="gallery">Gallery</string>
+    <string name="line_chart">Line Chart</string>
+    <string name="bar_chart">Bar Chart</string>
+    <string name="title_activity_line_chart_">LineChart_Activity</string>
 </resources>

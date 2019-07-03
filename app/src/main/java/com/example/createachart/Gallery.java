@@ -32,7 +32,7 @@ public class Gallery extends AppCompatActivity {
         // folder name
 
         File folder = new File(Environment.getExternalStorageDirectory() +
-                "/" + Environment.DIRECTORY_DCIM + "/" + "ChartGallery");
+                "/" + Environment.DIRECTORY_DCIM + "/" + "ChartGallery"+"/");
 
         if (!folder.exists())
             {
@@ -46,7 +46,7 @@ public class Gallery extends AppCompatActivity {
         else
             {
             File folder2 = new File(Environment.getExternalStorageDirectory() +
-                        "/" + Environment.DIRECTORY_DCIM + "/" + "ChartGallery");
+                        "/" + Environment.DIRECTORY_DCIM + "/" + "ChartGallery"+"/");
             file = new File(String.valueOf(folder2));
             }
 
@@ -110,7 +110,7 @@ public class Gallery extends AppCompatActivity {
             }
             else
             {
-                if (files[i].getName().endsWith(".jpg"))
+                if (files[i].getName().endsWith(".png"))
                 {
                     b.add(files[i]);
                 }
@@ -122,7 +122,7 @@ public class Gallery extends AppCompatActivity {
 
     private void openActivity(int i) {
         Intent intent = new Intent(this, Full_Image_Activity.class);
-        intent.putExtra("img",list.get(i).toString());
+        intent.putExtra("png",list.get(i).toString());
         startActivity(intent);
     }
 }

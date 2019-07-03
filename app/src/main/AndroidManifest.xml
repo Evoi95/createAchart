@@ -14,8 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Full_Image_Activity"/>
-        <activity android:name=".Gallery"/>
+        <activity
+            android:name=".LineChart_Activity"
+            android:label="@string/title_activity_line_chart_"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.createachart.MainActivity" />
+        </activity>
+        <activity android:name=".Full_Image_Activity" />
+        <activity android:name=".Gallery" />
         <activity
             android:name=".BarChart_Activity"
             android:label="@string/title_activity_bar_chart_"
